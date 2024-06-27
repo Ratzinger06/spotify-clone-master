@@ -1,0 +1,27 @@
+*{
+    background: rgb(0,0,0);
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,1) 0%,
+        rgba(34,157,41,1) 90%
+    );
+}
+.mp3_player-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.mp3-player-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(108, 95%, 7%, 0.815);
+    height: 400px;
+    width: 400px;
+    border-radius: 15%;
+    gap: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

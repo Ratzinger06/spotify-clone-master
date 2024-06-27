@@ -1,0 +1,12 @@
+<div class="mp3_player-container container-fluid">
+    <img src="assets/spotify_light.png" width="350" style="background: none;"><br>
+    <div class="mp3-player-card">
+        <img [src]="songData?.thumbnail" width="200" height="200" style="border-radius: 15px;"/>
+        <audio controls style="background: none;">
+            <source [src]="songData?.link" type="audio/mpeg">
+        </audio>
+    </div>
+    <div *ngIf="!songData?.link">
+        <h1 style="color: white;">NO SONG DATA AVAILABLE</h1>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+    <form [formGroup]="userForm" (ngSubmit)="submit()">
+        <div class="login__container">
+            <img src="assets/spotify_green.png" width="250">
+            <hr>
+            <div>
+                <label><strong>Email Or Username</strong></label><br>
+                <input type="text" placeholder="Email Or Username" [formControl]="usernameFormControl">
+            </div>
+            <div>
+                <label><Strong>Password</Strong></label><br>
+                <input type="password" placeholder="Password" [formControl]="passwordFormControl"><br>
+                <label class="mt-2"><a style="text-decoration: underline;">Forgot your password?</a></label><br>
+                <input type="checkbox" style="width: 35px; height: auto;"><label>Remember Me</label><br>
+                <button class="login__btn">LOG IN</button>
+            </div>
+        </div>
+    </form>
+</div>
